@@ -3,24 +3,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  {% bootstrap_css %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    {% bootstrap_css %}
 </head>
 
 <body>
 
     <div class="container  ">
-        <h1>contact</h1>
+        <br><br><h1>contact</h1><br><br>
         {% bootstrap_messages %}
-        <form action="{% url 'contact' %}" method="post", class="form", autocomplete="off">
-            {% csrf_token %}
+        <form action="{% url 'contact' %}" method="post", class="form", autocomplete="on">
             {% bootstrap_form form %}
 
             {% buttons %}
-                <button type="submit" class="btn btn-primary"></button>
+                <button type="submit" class="btn btn-primary">submit</button>
             {% endbuttons %}
         </form>
     </div>

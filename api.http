@@ -1,0 +1,13 @@
+@baseURL = http://127.0.0.1:9000
+
+###
+# @name create
+POST {{baseURL}}/contact
+Content-Type: "application/json"
+
+{
+    "name": "joelton Porto",
+    "email": "joeltonportolima@gmail.com",
+    "subject": "curso",
+    "message": "curso de django"
+}
